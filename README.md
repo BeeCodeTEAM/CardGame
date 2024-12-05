@@ -38,15 +38,6 @@ De inicio essas seriam as ferramentas que utilizaremos
 >
 ---
 
----
-
-
 > Github
-> https://github.com/BeeCodeTEAM
-
-
-
-
-> [!GITHUB] Github
 > https://github.com/BeeCodeTEAM
 
