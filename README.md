@@ -33,12 +33,18 @@ De inicio essas seriam as ferramentas que utilizaremos
 - #### Rafael Ponciano 
 ## Contato
 
-> [!Emaill] Email
+> Email
 >beecodecds@gmail.com
 >
 ---
 
 ---
+
+
+> Github
+> https://github.com/BeeCodeTEAM
+
+
 
 
 > [!GITHUB] Github
