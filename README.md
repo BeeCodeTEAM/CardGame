@@ -1,3 +1,6 @@
+## Link do projeto
+### https://beecodeteam.github.io/CardGame/
+
 ## Proposta
  Desenvolver um Card Game de navegador, procurando 
  fazer um projeto de forma mais profissional possivel e completa. Equipe de 4 estudantes de desenvolvimento
