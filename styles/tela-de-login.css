@@ -1,9 +1,9 @@
 @import url('https://fonts.googleapis.com/css2?family=Micro+5&display=swap');
 @import url('https://fonts.cdnfonts.com/css/minecraft-3');
 
-* {
-    margin: 0px;
-    padding: 0px;
+*{
+    padding: 0%;
+    margin: 0%;
     box-sizing: border-box;
 }
 
@@ -137,7 +137,6 @@ body {
 }
 
 
-
 .blur {
     background: rgba(109, 106, 106, 0.2);
     backdrop-filter: blur(8px);
@@ -147,72 +146,6 @@ body {
     align-items: center;
     justify-content: center;
 }
-
-
-
-
-
-.adventure-text {
-    position: absolute;
-    width: 664px;
-    height: 179px;
-    margin-bottom: 400px;
-    font-family: "Minecraft", serif;
-    font-style: normal;
-    font-weight: 500;
-    font-size: 96px;
-    line-height: 100px;
-    text-align: center;
-    letter-spacing: 0.04em;
-    border: black 1px;
-    -webkit-text-stroke: 1px black;
-    text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
-    color: #41A92C;
-}
-
-.click-here-button {
-    font-family: "Micro 5", serif;
-    font-weight: 400;
-    display: flex;
-    font-style: normal;
-    font-size: 80px;
-    color: white;
-    width: 477px;
-    height: 97px;
-    background: #88CB2A;
-    opacity: 50%;
-    border-radius: 22px;
-    margin-top: 190px;
-    text-align: center;
-    align-items: center;
-    justify-content: center;
-    line-height: 97px;
-    /* Centraliza o texto verticalmente */
-}
-
-* .click-here-button:hover {
-    cursor: pointer;
-    background-color: #6ca51c;
-}
-
-@media (max-width: 768px) {
-    .adventure-text {
-        font-size: 48px;
-        /* Reduz tamanho do texto em telas menores */
-        line-height: 1.2;
-        margin-bottom: 10px;
-    }
-
-    .click-here-button {
-        font-size: 40px;
-        /* Reduz o botão em telas menores */
-        width: 300px;
-        height: 70px;
-        transform: translateY(5%);
-        /* Ajuste menor para telas pequenas */
-    }
-}
-
 
 :root {
     --color-neutral-0: #0e0c0c;
@@ -387,3 +320,135 @@ img {
         background-color: yellow;
     }
 }
+
+form{
+    position: absolute;
+    width: 781px;
+    height: 753px;
+    
+    
+    border-radius: 30px;
+    backdrop-filter: blur(0px);
+    z-index: 1;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    padding: 20px; /* Espaçamento interno */
+    
+}
+
+.form-background{
+    width: 781px;
+    height: 760px;
+    position: absolute;
+    background: #7EB135;
+    z-index: 1;
+    opacity: 0.8;
+    border-radius: 30px;
+}
+
+.form-elements{
+    z-index: 2;
+    display: flex;
+    flex-direction: column;
+    isolation: isolate;
+    position: relative;
+    gap: 30px;
+}
+
+form input{
+    width: 567px;
+    height: 74px;
+    
+    background: #BDBDBD;
+    opacity: 100;
+    border: none;
+    font-size: 30px;
+    font-weight: bold;
+    outline: none;
+    
+}
+
+input::placeholder{
+    margin-left: 10px;
+    font-family: Arial, Helvetica, sans-serif;
+    
+}
+
+#botao-login{
+    width: 567px;
+    height: 115px;
+    border-radius: 30px;
+    background: #05770a;
+
+    color: white;;
+    font-weight: bold;
+    font-size: 40px;
+    border: none;
+    cursor: pointer;
+}
+.esqueci-senha{
+    color: #2c2a2a; 
+    font-size: 25px; 
+    margin-top: 10px;
+    text-decoration: none;
+    font-weight: bold;
+    display: flex;
+    justify-content: right;
+    align-items: right;
+    display: none;
+}
+
+.fa-solid.fa-circle-user{
+     font-size: 150px;
+    
+     justify-content: center;
+     display: flex;
+     z-index: 1;
+     transform: translateY(-200px);
+     
+}
+
+.form-email{
+    width: 567px;
+    height: 74px;
+    display: flex;
+    align-items: center;
+    
+}
+
+.form-email i{
+    position: absolute;
+    right: 2%;
+    font-size: 50px;
+ }
+
+ .form-email input{
+    width: 100%;
+    height: 100%;
+ }
+
+
+ 
+
+
+
+ .form-senha{
+    width: 567px;
+    height: 74px;
+    display: flex;
+    align-items: center;
+    
+}
+
+.form-senha i{
+    position: absolute;
+    right: 2%;
+    font-size: 50px;
+ }
+
+ .form-senha input{
+    width: 100%;
+    height: 100%;
+ }
