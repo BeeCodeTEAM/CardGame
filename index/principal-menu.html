@@ -3,13 +3,15 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="/styles/principal-menu-style.css">
+
+    <!-- Importa biblioteca AOS -->
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
     <title>CardGame</title>
     <link rel="stylesheet" href="/styles/principal-menu-style.css">
     
 </head>
-
 <body>
-
     <nav class="navbar">
         <div class="navbar-container">
             <ul class="nav-links">
@@ -21,15 +23,38 @@
 
                     <li><a href="#">
                             <img class="login-icon" src="/account-icon.png" alt="Login">
-
                         </a>
                     </li>
                 </div>
             </ul>
         </div>
     </nav>
+
+    <section class="page-center-content">
+        <div class="background-image">
+            <div class="blur">     
+                <h1 data-aos="fade-up" data-aos-duration="1000" data-aos-easing="linear" class="adventure-text">
+                    COMECAR A <br> AVENTURA</h1>
+                    
+                    <button class="click-here-button">Clique</button>
+                  </div>
+                
+        </div>
+    </section>
+    
+    <!-- <div class="imagemCentral-principal">
+       <button data-aos="flip-left" data-aos-duration="600" type="button" class="center-button-principal">Clique aqui</button>
+    </div>
+ -->
+
+
     
 </body>
+<script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+<script>
+    AOS.init();
+  </script>
+ 
 
 <script src="/script/principal-menu.js"></script>
 </html>
