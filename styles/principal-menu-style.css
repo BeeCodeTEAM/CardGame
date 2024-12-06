@@ -1,5 +1,69 @@
+@import url('https://fonts.googleapis.com/css2?family=Micro+5&display=swap');
+
 * {
     margin: 0px;
     padding: 0px;
     box-sizing: border-box;
+}
+
+.navbar {
+    position: absolute;
+    width: 100%;
+    height: 126px;
+    display: flex;
+    align-items: center;
+    background: #9DE33B;
+    justify-content:flex-end;
+    
+}
+
+.nav-links {
+    
+    display: flex;
+    align-items: center;
+    list-style: none;
+    padding: 0;
+    margin: 30px;
+    display: flex;
+}
+
+.nav-links li {
+    margin: 0 20px;
+    margin: 70px;
+}
+
+.nav-links a {
+    font-family: 'Micro 5';
+font-style: normal;
+font-weight: 400;
+font-size: 96px;
+line-height: 100px;
+text-align: center;
+letter-spacing: 0.04em;
+text-decoration: none;
+
+color: #FFFFFF;
+    transition: color 0.7s ease;
+
+}
+
+.nav-links a:hover {
+    color: #703b0a;
+}
+
+.elementos-direita {
+
+    display: flex;
+    align-items: center;
+
+    
+}
+
+.login-icon {
+    display: flex;
+    align-items: right;
+    justify-content: right;
+    width: 90px;
+    height: 90px;
+    cursor: pointer;
 }
