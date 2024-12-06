@@ -10,30 +10,30 @@
   Esperamos poder escalar esse projeto, para trazer para nós visibilidade e demonstrar nossos interesses."
 
 ---
-## Ferramentas
-De inicio essas seriam as ferramentas que utilizaremos
-### Metodologia
-1. SCRUM
+## Ferramentas, Metodologias e Tecnologias
+1. Scrum
+2. Trello
+3. Visual Studio Code
+   
 ### Front-End
 1. HTML
 2. CSS
-3. JavaScript / TypeScript
+3. JavaScript
 4. React
 
 ### Back-End
 1. PHP
-2. Java
-3. Node.js 
+2. Node.js 
 
 ---
 ## Bee Code 
 
 ### Equipe
 
-- #### Gustavo Souza Lopes
-- #### Ian Raçano
-- #### Lucas Rodrigues Martins
-- #### Rafael Ponciano 
+- #### Gustavo Souza Lopes - Back/Front-End
+- #### Ian Raçano - UI/UX / Front-End
+- #### Lucas Rodrigues Martins Front-End
+- #### Rafael Ponciano Front-End 
 ## Contato
 
 > [!Emaill] Email
