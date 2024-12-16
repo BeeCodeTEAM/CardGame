@@ -240,7 +240,7 @@ img {
 
 .footer-list .footer-link {
     color: var(--color-neutral-30);
-    transition: all 0.4s;
+    transition: 0.4s;
 }
 
 .footer-list .footer-link:hover {
@@ -346,6 +346,8 @@ form{
     z-index: 1;
     opacity: 0.8;
     border-radius: 30px;
+
+    box-shadow: rgba(24, 170, 5, 0.8) 0px 0px 80px 10px inset;
 }
 
 .form-elements{
@@ -361,18 +363,37 @@ form input{
     width: 567px;
     height: 74px;
     
-    background: #BDBDBD;
-    opacity: 100;
+    background: transparent;
     border: none;
     font-size: 30px;
     font-weight: bold;
     outline: none;
-    
+    padding-left: 20px;
+    border: 2px solid #000;
+    border-radius: 50px;
+    outline: none;
+    box-shadow: 0 0 1px 7px rgba(6, 26, 114, 0.5);
+    transition: 0.3s;
 }
+    
+form input:focus {
+    box-shadow: 0 0 50px 20px rgba(196, 114, 7, 0.5);
+    transform: scale(1.01);
+  }
+
+input[type="password"]::-ms-reveal, /*Microsoft Edge */
+input[type="password"]::-webkit-reveal /*Chrome, safari*/{
+    position: absolute;
+    right: 10px; 
+    top: 50%; 
+    transform: translateY(-50%);
+}
+
 
 input::placeholder{
     margin-left: 10px;
     font-family: Arial, Helvetica, sans-serif;
+    color: #000;
     
 }
 
@@ -382,23 +403,48 @@ input::placeholder{
     border-radius: 30px;
     background: #05770a;
 
-    color: white;;
+    color: white;
     font-weight: bold;
     font-size: 40px;
     border: none;
     cursor: pointer;
+    transition: background 0.5s ease;
+    transition: transform 1s ease, background-image ease;
+    position: relative;
+    overflow: hidden;
+    box-shadow: 0 0 5px #000;
 }
-.esqueci-senha{
-    color: #2c2a2a; 
-    font-size: 25px; 
-    margin-top: 10px;
-    text-decoration: none;
+#botao-login:hover{
+    background: #035507;
+    transform: scale(1.05);
+    border: 3px solid #000000;
+}
+
+#botao-login::after{
+    content: 'BEM-VINDO';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-image: url(/CardGame/images/backgroundImage.jpg); 
+    background-size: cover;
+    background-position: top;
+    opacity: 0; 
+    transition: opacity 0.5s ease; 
+    color: #000000;
     font-weight: bold;
+    text-align: center;
     display: flex;
-    justify-content: right;
-    align-items: right;
-    display: none;
+    justify-content: center;
+    align-items: center;
+
 }
+
+#botao-login:hover::after {
+    opacity: 1; 
+}
+
 
 .fa-solid.fa-circle-user{
      font-size: 150px;
@@ -406,49 +452,85 @@ input::placeholder{
      justify-content: center;
      display: flex;
      z-index: 1;
-     transform: translateY(-200px);
-     
-}
+     transform: translateY(-110px);
+    }
 
 .form-email{
     width: 567px;
     height: 74px;
     display: flex;
     align-items: center;
-    
+    transform: translateY(-60px);
+
 }
 
 .form-email i{
     position: absolute;
-    right: 2%;
+    left: 2%;
     font-size: 50px;
+    
  }
 
  .form-email input{
     width: 100%;
     height: 100%;
+    padding-left: 70px;
+    
  }
-
-
- 
-
-
 
  .form-senha{
     width: 567px;
     height: 74px;
     display: flex;
     align-items: center;
-    
+    transform: translateY(-20px);
 }
 
 .form-senha i{
     position: absolute;
-    right: 2%;
+    left: 2%;
     font-size: 50px;
  }
 
  .form-senha input{
     width: 100%;
     height: 100%;
- }
+    padding-left: 70px;
+}
+
+.form-esqueci-senha a{
+    position: flex;
+    font-size: 200%;
+    color: #000000;
+    text-decoration: none;
+    font-weight: bold;
+    
+}
+.form-esqueci-senha{
+    position: flex;
+    transform: translateX(47%);
+    color: #000000;
+    text-decoration: none;
+    font-weight: bold;
+    
+}
+
+#form-cadastrar{
+    position: flex;
+    font-size: 240%;
+    color: #000000;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+#form-cadastrar{
+    position: flex;
+    transform: translateX(1%);
+    color: #000000;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+form a:hover{
+    text-shadow: 0 0 3px #703b0a;
+}

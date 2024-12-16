@@ -10,10 +10,13 @@
     <title>Login</title>
 </head>
 <body>
+    <audio autoplay loop>
+        <source src="/CardGame/images/Bichos da floresta para crian as com som da floresta_[_YouConvert.net_].mp3">
+    </audio>
     <nav class="navbar">
         <div class="navbar-container">
             <ul class="nav-links">
-                <li><a href="#">Home</a></li>
+                <li><a href="/CardGame/index.html">Home</a></li>
                 <li><a href="#">Packs</a></li>
                 <li><a href="#">Decks</a></li>
                 <div class="elementos-direita">
@@ -27,10 +30,6 @@
             </ul>
         </div>
     </nav>
-
-        </form>
-
-        
 
     <section class="page-center-content">
 
@@ -51,20 +50,22 @@
 
                     <i class="fa-solid fa-envelope"></i>
 
-                </div>
+                </div>      
                 
                 <div class="form-senha">
-                    <input placeholder="Senha" type="password" required>
 
-                   
+                    <input placeholder="Senha" type="password" required> 
+                    
+                    <i class="fa-solid fa-lock"></i>
 
                 </div>
-    
-                    <a class="esqueci-senha" href="#">Esqueci minha Senha</a>
-    
-                
+                <div class="form-esqueci-senha">      
+                <a href="">Esqueci minha Senha</a>
+            </div> 
+
                 <button id="botao-login"  type="submit">Login</button>
 
+                <a id="form-cadastrar" href="">Não tem uma conta? Cadastras-se</a>
                 </div>
 
             </div>
